@@ -21,7 +21,7 @@ RESPONSES = ['Eso es fácil no?',
             'En Openshit',
             'Posgret',
             'Son primos hermanos',
-            'Al final, no deja de ser...',
+            'Al final, no deja de ser... '+bot_name,
             'Hay que publicar en yammer',
             'Nos tenemos que dejar ver',
             'Olvidate de eso, ahora estamos con otra cosa',
@@ -31,7 +31,7 @@ RESPONSES = ['Eso es fácil no?',
             'Son cuatro líneas de código',
             'Lo ponemos en friends&family de momento',
             'Arturo que no, que eso no es así',
-            'Hay que ir mirando esto: http://bit.ly/2qei3E6',
+            'Hay que ir mirando esto:'+randomWiki(),
             'Un par de clicks']
 
 
@@ -106,6 +106,8 @@ def main():
                         send_message(text, chat, original_message)
         time.sleep(0.5)
 
+def randomWiki():
+    return 'http://bit.ly/'+''.join(random.choice('0123456789ABCDEFabcdef') for i in range(7))
 
 if __name__ == '__main__':
     main()
