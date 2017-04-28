@@ -21,7 +21,7 @@ RESPONSES = ['Eso es fácil no?',
             'En Openshit',
             'Posgret',
             'Son primos hermanos',
-            'Al final, no deja de ser...',
+            'Al final, no deja de ser... '+random.choice(RESPONSE)+' verdad @bunki_bot?,
             'Hay que publicar en yammer',
             'Nos tenemos que dejar ver',
             'Olvidate de eso, ahora estamos con otra cosa',
@@ -105,7 +105,6 @@ def main():
                         print chat
                         send_message(text, chat, original_message)
         time.sleep(0.5)
-
 
 if __name__ == '__main__':
     main()
