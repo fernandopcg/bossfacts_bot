@@ -9,30 +9,52 @@ TOKEN = ""
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 bot_name = "@bossfacts_bot"	# Bot will only respond to messages containing this
 
+DEPARTAMENTOS = ['Cloud services',
+                'Juan santiago',
+                'la pagina aquella de internet',
+                'ese hilo de stackoverlow']
+
+FECHAS = ['el lunes', 'el martes', 'el miercoles', 'el jueves', 'el viernes', 'este sprint', 'el proximo sprint', 'esta tarde', 'la demo']
+
 RESPONSES = ['Eso es fácil no?',
             'Eso está hecho ya',
             'Eso es copy paste',
             'En un sprint está hecho, no?',
-            'Los de Cloud Services lo tienen ya hecho, es adaptarlo',
+            'Los de ' + random.choice(DEPARTAMENTOS)+ ' lo tienen ya hecho, es adaptarlo',
             'Mira a ver si respira',
             'Dale un ping',
             'Pero se va dejando?',
             'Estamos en periodo friends and family',
             'En Openshit',
-            'Posgret',
+            'El posgret',
             'Son primos hermanos',
             'Al final, no deja de ser...',
-            'Hay que publicar en yammer',
+            'Hello... Hay que publicar en yammer',
             'Nos tenemos que dejar ver',
             'Olvidate de eso, ahora estamos con otra cosa',
             'Nos ha salido un portalillo nuevo',
-            'No parece muy complicado eso,¿no?',
+            'No parece muy complicado eso, ¿no?',
             'Lo único cambiarle los colores',
             'Son cuatro líneas de código',
             'Lo ponemos en friends&family de momento',
             'Arturo que no, que eso no es así',
             'Hay que ir mirando esto: http://bit.ly/2qei3E6',
-            'Un par de clicks']
+            'Un par de clicks',
+            'Pones cuatro botones y ya',
+            'A ver si para la semana que viene lo sacamos',
+            'Pasamelo y lo escalo para que lo muevan en Madrid',
+            'Lo metemos para este sprint',
+            'Y la docu hay que ponerla al día',
+            'Recuerda actualizar la tarea de Jira',
+            'FYI http://bit.ly/2qei3E6',
+            'Hello... hoy trabajare desde casa',
+            'Pon en DEV lo que vayas teniendo, para echar un vistazo',
+            'Any more?',
+            'A ver si lo dejamos ventilado para ' + random.choice(FECHAS),
+            'Eso en principio es facil',
+            'Y otra chorradilla...',
+            'Sólo una pijadilla...'
+            'Bueno, un review rápido']
 
 
 def get_url(url):
