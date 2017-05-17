@@ -54,7 +54,8 @@ RESPONSES = ['Eso es fácil no?',
             'Eso en principio es facil',
             'Y otra chorradilla...',
             'Sólo una pijadilla...'
-            'Bueno, un review rápido']
+            'Bueno, un review rápido',
+            '¿Cómo de complicado sería esto?']
 
 
 def get_url(url):
